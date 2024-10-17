@@ -24,7 +24,7 @@ public class ElevatorController {
 
         for (Elevator elevator : elevators) {
             int distance = Math.abs(sourceFloor - elevator.getCurrentFloor());
-            if(distance < minDistance) {
+            if(distance < minDistance && elevator.getCurrentLoad() < elevator.getCapacity()) {
                 minDistance = distance;
                 optimalElevator = elevator;
             }

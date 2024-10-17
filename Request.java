@@ -7,11 +7,11 @@ public class Request {
         this.destinationFloor = destinationFloor;
     }
 
-    public getSourceFloor() {
+    public int getSourceFloor() {
         return sourceFloor;
     }
 
-    public getDestinationFloor() {
+    public int getDestinationFloor() {
         return destinationFloor;
     }
 }
